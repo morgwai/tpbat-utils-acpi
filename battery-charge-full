@@ -1,0 +1,3 @@
+#!/bin/bash
+sudo tpacpi-bat -s ST 1 0
+sudo tpacpi-bat -s SP 1 0

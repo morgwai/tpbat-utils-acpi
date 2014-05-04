@@ -1,0 +1,12 @@
+# This file contains battery charge levels at which charging should
+# start and stop respectively.
+# It is sourced by battery-* bash scripts.
+# You can considerably extend or limit your battery life by adjusting these
+# values.
+# By default this file contains values sane for li-ion batteries.
+# Refer to the below document for details and values sane for other types of
+# batteries:
+# http://www.thinkwiki.org/wiki/Maintenance
+
+BATTERY_START_CHARGE_LEVEL=50
+BATTERY_STOP_CHARGE_LEVEL=85

@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "start charging at $(sudo tpacpi-bat -g ST 1)";
+echo "stop charging at $(sudo tpacpi-bat -g SP 1)";

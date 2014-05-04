@@ -1,0 +1,4 @@
+#!/bin/bash
+. /etc/battery-charge-levels
+sudo tpacpi-bat -s ST 1 ${BATTERY_START_CHARGE_LEVEL}
+sudo tpacpi-bat -s SP 1 ${BATTERY_STOP_CHARGE_LEVEL}
