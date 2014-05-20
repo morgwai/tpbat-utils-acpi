@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	mkdir -p debian/tpbat-utils-acpi/etc/sudoers.d
+	install -m 0440 -T tpbat.sudoers debian/tpbat-utils-acpi/etc/sudoers.d/tpbat

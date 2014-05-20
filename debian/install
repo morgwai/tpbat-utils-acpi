@@ -1,0 +1,5 @@
+battery-charge-levels etc
+battery-get-charge-levels usr/bin
+battery-set-normal-charge-levels usr/bin
+battery-charge-full usr/bin
+battery-force-charge usr/bin

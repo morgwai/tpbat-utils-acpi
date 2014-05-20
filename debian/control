@@ -1,0 +1,17 @@
+Source: tpbat-utils-acpi
+Section: utils
+Priority: extra
+Maintainer: Piotr Morgwai Kotarbinski (launchpad related address) <launchpad@morgwai.pl>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+Homepage: https://github.com/morgwai/tpbat-utils-acpi
+Vcs-Git: https://github.com/morgwai/tpbat-utils-acpi.git
+
+Package: tpbat-utils-acpi
+Architecture: all
+Depends: tpacpi-bat, ${misc:Depends}
+Provides: tpbat-utils
+Conflicts: tpbat-utils-smapi
+Description: Utility scripts and config files around tpacpi-bat.
+ Scripts from this package allow one to easily set typical battery
+ charge thresholds.
