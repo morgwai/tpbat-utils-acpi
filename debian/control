@@ -12,6 +12,6 @@ Architecture: all
 Depends: tpacpi-bat, ${misc:Depends}
 Provides: tpbat-utils
 Conflicts: tpbat-utils-smapi
-Description: Utility scripts and config files around tpacpi-bat.
+Description: ThinkPad battery management utility scripts and config files.
  Scripts from this package allow one to easily set typical battery
  charge thresholds.
