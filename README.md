@@ -6,6 +6,7 @@ Some simple utility scripts and config files around tpacpi-bat.
 battery-charge-levels
 ---------------------
 Contains "normal" battery charge thresholds. This file should be placed in /etc/ folder and may be edited to change what "normal" means. By default it contains vaules that help to prelong li-ion battery life. 
+See <http://www.thinkwiki.org/wiki/Maintenance#Battery_treatment> for details and values sane for other types of batteries.
 
 battery-get-charge-levels
 -------------------------

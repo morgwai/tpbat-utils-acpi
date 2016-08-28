@@ -6,7 +6,7 @@
 # By default this file contains values sane for li-ion batteries.
 # Refer to the below document for details and values sane for other types of
 # batteries:
-# http://www.thinkwiki.org/wiki/Maintenance
+# http://www.thinkwiki.org/wiki/Maintenance#Battery_treatment
 
-BATTERY_START_CHARGE_LEVEL=50
+BATTERY_START_CHARGE_LEVEL=40
 BATTERY_STOP_CHARGE_LEVEL=85
