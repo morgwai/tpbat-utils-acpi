@@ -1,3 +1,6 @@
 #!/bin/bash
-sudo tpacpi-bat -s ST 1 0
-sudo tpacpi-bat -s SP 1 0
+max_bat=`/usr/bin/acpi | wc -l`
+for i in `seq 1 $max_bat` ; do
+	sudo tpacpi-bat -s ST ${i} 0
+	sudo tpacpi-bat -s SP ${i} 0
+done

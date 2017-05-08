@@ -1,5 +1,8 @@
 #!/bin/bash
 . /etc/battery-charge-levels
 BATTERY_START_CHARGE_LEVEL=$[ ${BATTERY_STOP_CHARGE_LEVEL} - 4 ];
-sudo tpacpi-bat -s ST 1 ${BATTERY_START_CHARGE_LEVEL}
-sudo tpacpi-bat -s SP 1 ${BATTERY_STOP_CHARGE_LEVEL}
+max_bat=`/usr/bin/acpi | wc -l`
+for i in `seq 1 $max_bat` ; do
+	sudo tpacpi-bat -s ST ${i} ${BATTERY_START_CHARGE_LEVEL}
+	sudo tpacpi-bat -s SP ${i} ${BATTERY_STOP_CHARGE_LEVEL}
+done
